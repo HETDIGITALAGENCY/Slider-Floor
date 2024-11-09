@@ -7,10 +7,10 @@ public class GecisReklami : MonoBehaviour
 {
     public static GecisReklami instance;
 
-#if UNITY_EDITOR
-    string _adUnitID = "ca-app-pub-2563028499947801/6286448346";
+#if UNITY_ANDROID
+    string _adUnitID = "ca-app-pub-9584256452772726/8576454084";
 #elif UNITY_IPHONE
-    string _adUnitID = "ca-app-pub-2563028499947801/4272691692";
+    string _adUnitID = "ca-app-pub-9584256452772726/4028934482";
 #else
     string _adUnitID = "ca-app-pub-2563028499947801/6286448346";
 #endif

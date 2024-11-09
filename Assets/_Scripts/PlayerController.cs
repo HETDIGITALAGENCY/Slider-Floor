@@ -49,21 +49,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-       if (Input.GetMouseButtonDown(0) && IsGrounded())
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-            {
-                if (hit.collider != null)
-                {
-
-                    _rb.AddForce(transform.up * speedup + transform.right * speedright, ForceMode.Impulse);
-                    hit.collider.GetComponent<Collider>();
-                }
-            }
-        }
       
 
 
