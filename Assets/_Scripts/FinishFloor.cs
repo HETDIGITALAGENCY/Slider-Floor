@@ -7,8 +7,8 @@ public class FinishFloor : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            GecisReklami.instance.GecisReklamiOlustur();
-            GecisReklami.instance.GecisReklamiGoster();
+            //GecisReklami.instance.GecisReklamiOlustur();
+           // GecisReklami.instance.GecisReklamiGoster();
         }
     }
 
