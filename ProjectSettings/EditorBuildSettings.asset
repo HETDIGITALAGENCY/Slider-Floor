@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/11-20/Level 20.unity
     guid: 61a341e0c23e0744ab19532d9eb6f512
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 088f6716f0adfdb42831c12679c8258c,
+      type: 2}
+  m_UseUCBPForAssetBundles: 0

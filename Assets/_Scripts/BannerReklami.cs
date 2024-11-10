@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class BannerReklami : MonoBehaviour
 {
-  
+
 #if UNITY_ANDROID
-    private string _adUnitId = "ca-app-pub-2563028499947801/2985599210";
+    string _adUnitId = "ca-app-pub-9584256452772726/2045768978";
 #elif UNITY_IPHONE
-  private string _adUnitId = "ca-app-pub-2563028499947801/8940832505";
+  private string _adUnitId = "ca-app-pub-9584256452772726/6802409239";
 #else
-  private string _adUnitId = "ca-app-pub-2563028499947801/2985599210";
+    private string _adUnitId = "ca-app-pub-2563028499947801/2985599210";
 #endif
 
     BannerView _bannerView;
@@ -151,3 +151,4 @@ public class BannerReklami : MonoBehaviour
     
    
 }
+
