@@ -12,7 +12,7 @@ public class GecisReklami : MonoBehaviour
 #elif UNITY_IPHONE
     string _adUnitID = "ca-app-pub-9584256452772726/4028934482";
 #else
-    string _adUnitID = "ca-app-pub-2563028499947801/6286448346";
+    string _adUnitID = "ca-app-pub-2563028499947801/6286448346";pa
 #endif
 
     InterstitialAd _GecisReklami;

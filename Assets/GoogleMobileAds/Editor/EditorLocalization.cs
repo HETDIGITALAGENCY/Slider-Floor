@@ -55,8 +55,8 @@ namespace GoogleMobileAds.Editor
         // Else, use the default (fallback) language, if the localization key is missing for
         // the chosen language (or no language was selected).
         // The region is omitted purposely as we don't currently require this level of details.
-        string userLanguage = GoogleMobileAdsSettings.LoadInstance().UserLanguage;
-        return localizations.TryGetValue(userLanguage, out string? localization) && !String.IsNullOrEmpty(localization) ? localization : localizations[GetDefaultLanguage()];
+        ;
+        
       }
 #nullable disable
       // Error, key not found, no localization to return so let's fallback to the key name
