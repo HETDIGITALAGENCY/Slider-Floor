@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class _Floor : MonoBehaviour
 {
-    BannerReklami bannerreklamisc;
 
     [Header("Zemin")]
     [SerializeField]

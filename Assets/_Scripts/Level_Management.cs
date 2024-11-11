@@ -6,8 +6,8 @@ using Unity.VisualScripting;
 
 public class Level_Management : MonoBehaviour
 {
+    GoogleAdsManager googleads;
     PlayerController playerController;
-    public GameObject bannerreklamisc;
     public GameObject _continuePanel;
     public Button _continueButton;
  
@@ -20,6 +20,7 @@ public class Level_Management : MonoBehaviour
 
     public void Start()
     {
+        googleads = FindObjectOfType<GoogleAdsManager>();
         Time.timeScale = 1.0f;
         _continuePanel.SetActive(false);
         _pausePanel.SetActive(false);
@@ -35,6 +36,7 @@ public class Level_Management : MonoBehaviour
     public void ContinueButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
     public void PauseButton()
     {

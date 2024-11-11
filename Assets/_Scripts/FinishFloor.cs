@@ -3,12 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class FinishFloor : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision col)
+    GoogleAdsManager googleads;
+
+    private void Start()
     {
+        googleads = FindObjectOfType<GoogleAdsManager>();
+    }
+    private void OnCollisionEnter(Collision col)
+    { 
         if (col.gameObject.CompareTag("Player"))
-        {
-            GecisReklami.instance.GecisReklamiOlustur();
-            GecisReklami.instance.GecisReklamiGoster();
+        { 
+            googleads.LoadInterstitialAd();
+            googleads.ShowInterstitialAd();
         }
     }
 

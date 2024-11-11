@@ -5,6 +5,7 @@ using TMPro;
 
 public class UI_Manager : MonoBehaviour
 {
+    GoogleAdsManager googleads;
    
 
     [SerializeField] private GameObject _menuPanel;
@@ -13,6 +14,7 @@ public class UI_Manager : MonoBehaviour
 
     private void Start()
     {
+        googleads = FindObjectOfType<GoogleAdsManager>();
         Time.timeScale = 0.0f;
         _menuPanel.SetActive(true);
         _playButton.onClick.AddListener(PlayButton);

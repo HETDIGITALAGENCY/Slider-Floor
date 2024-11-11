@@ -49,7 +49,12 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-      
+        if (Input.GetMouseButtonDown(0) && IsGrounded())
+        {
+
+            _rb.AddForce(transform.up * speedup + transform.right * speedright, ForceMode.Impulse);
+        }
+
 
 
 
