@@ -27,7 +27,7 @@ public class GoogleAdsManager : MonoBehaviour
         MobileAds.RaiseAdEventsOnUnityMainThread = true;
         MobileAds.Initialize(initStatus => {
 
-            print("Reklam baþladý");
+            print("Reklam basladi");
         
         });
 
@@ -74,11 +74,11 @@ public class GoogleAdsManager : MonoBehaviour
         {
             if (error != null || ad == null)
             {
-                print("Geçiþ Reklamý Yüklenemedi" + error);
+                print("Gecis Reklami Yuklenemedi" + error);
                 return;
             }
 
-            print("Geçik reklamý yüklendi" + ad.GetResponseInfo());
+            print("Gecis reklami yuklendi" + ad.GetResponseInfo());
             interstitialAd = ad;
         });
     }
@@ -91,7 +91,7 @@ public class GoogleAdsManager : MonoBehaviour
         }
         else
         {
-            print("reklam hazýr deðil");
+            print("reklam hazir degil");
         }
     } 
 
