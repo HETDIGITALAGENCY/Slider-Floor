@@ -2,20 +2,21 @@ using UnityEngine;
 using GoogleMobileAds.Api;
 
 
+
 public class GoogleAdsManager : MonoBehaviour
 {
     public string AndroidId = "ca-app-pub-9584256452772726~5605740031";
 
 
-     #if UNITY_ANDROID
+#if UNITY_ANDROID
      string bannerId = "ca-app-pub-9584256452772726/2045768978" ; 
      string interId = "ca-app-pub-9584256452772726/8576454084" ;
 
-     #elif UNITY_IPHONE
+#elif UNITY_IPHONE
      string bannerId = "ca-app-pub-9584256452772726/6802409239" ; 
      string interId = "ca-app-pub-9584256452772726/4028934482" ; 
 
-     #endif 
+#endif
 
     BannerView bannerView;
     InterstitialAd interstitialAd;
