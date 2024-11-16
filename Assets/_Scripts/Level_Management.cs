@@ -34,12 +34,13 @@ public class Level_Management : MonoBehaviour
         _text.text = SceneManager.GetActiveScene().name;
     }
     public void ContinueButton()
-    {
+    { 
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }
     public void PauseButton()
-    {
+    {   
         Time.timeScale = 0.0f;
         _pausePanel.SetActive(true);
     }
