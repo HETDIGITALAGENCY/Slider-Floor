@@ -26,17 +26,21 @@ public class GoogleAdsManager : MonoBehaviour
             print("Reklam Başlatıldı.");
         });
 
-        // Reklam cihazı ayarlarını yapma
-        RequestConfiguration requestConfiguration = new RequestConfiguration();
-        requestConfiguration.TestDeviceIds.Add("6ee96d1b15e3d4fccad468606de360e8");
-        MobileAds.SetRequestConfiguration(requestConfiguration);
-
+        
         // Banner reklamını yükle
         CreateBannerView();
         LoadBannerAd();
 
         // Interstitial reklamını yükle
         LoadInterstitialAd();
+    }
+
+    void Update()
+    {
+        // Reklam cihazı ayarlarını yapma
+        RequestConfiguration requestConfiguration = new RequestConfiguration();
+        requestConfiguration.TestDeviceIds.Add("6ee96d1b15e3d4fccad468606de360e8");
+        MobileAds.SetRequestConfiguration(requestConfiguration);
     }
 
     #region Banner
