@@ -1,8 +1,6 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-
 public class UI_Manager : MonoBehaviour
 {
     GoogleAdsManager googleads;
@@ -26,7 +24,7 @@ public class UI_Manager : MonoBehaviour
         SceneManager.LoadScene("Level 1");
         Time.timeScale = 1.0f;
     }
-    private void QuitButton()
+     private void QuitButton()
     {
         Application.Quit();
     }

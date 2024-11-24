@@ -1,8 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
-using Unity.VisualScripting;
-
 public class PlayerController : MonoBehaviour
 {
    

@@ -139,27 +139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5.8
   distance: 6
---- !u!65 &262250285
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153724260984220}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &262250286
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -201,27 +180,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   distance: 5
---- !u!65 &269021325
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723161109667}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &269021326
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -533,27 +491,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   distance: 9
---- !u!65 &429822404
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723377654802}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &429822405
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -704,27 +641,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   distance: 4.9
---- !u!65 &671679447
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153722906994116}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &671679448
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -766,27 +682,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   distance: 5
---- !u!65 &687443558
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153724413472385}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &687443559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -828,27 +723,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   distance: 5
---- !u!65 &762012895
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153722892843091}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &762012896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1249,27 +1123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5.8
   distance: 5
---- !u!65 &1084544627
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723883690383}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1084544628
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1592,27 +1445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   distance: 4.9
---- !u!65 &1844820062
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723920326417}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1844820063
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1759,27 +1591,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   distance: 6
---- !u!65 &2031850580
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723717784251}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2031850581
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2027,7 +1838,6 @@ GameObject:
   - component: {fileID: 2119668799765472172}
   - component: {fileID: 8292788831747960064}
   - component: {fileID: 9193851120969592386}
-  - component: {fileID: 762012895}
   - component: {fileID: 762012896}
   - component: {fileID: 762012897}
   m_Layer: 3
@@ -2050,7 +1860,6 @@ GameObject:
   - component: {fileID: 2119668799741886011}
   - component: {fileID: 8292788831732756631}
   - component: {fileID: 9193851120954389461}
-  - component: {fileID: 671679447}
   - component: {fileID: 671679448}
   m_Layer: 3
   m_Name: Slider_Floor_5
@@ -2072,7 +1881,6 @@ GameObject:
   - component: {fileID: 2119668799496814428}
   - component: {fileID: 8292788832016429552}
   - component: {fileID: 9193851121238258354}
-  - component: {fileID: 269021325}
   - component: {fileID: 269021326}
   m_Layer: 3
   m_Name: Slider_Floor_4
@@ -2094,7 +1902,6 @@ GameObject:
   - component: {fileID: 2119668799411423213}
   - component: {fileID: 8292788832201574721}
   - component: {fileID: 9193851121286924803}
-  - component: {fileID: 429822404}
   - component: {fileID: 429822405}
   m_Layer: 3
   m_Name: Slider_Floor_2
@@ -2116,7 +1923,6 @@ GameObject:
   - component: {fileID: 2119668797871982916}
   - component: {fileID: 8292788830385571816}
   - component: {fileID: 9193851121769399466}
-  - component: {fileID: 2031850580}
   - component: {fileID: 2031850581}
   m_Layer: 3
   m_Name: Slider_Floor_9
@@ -2138,7 +1944,6 @@ GameObject:
   - component: {fileID: 2119668797765714544}
   - component: {fileID: 8292788830622715100}
   - component: {fileID: 9193851121788637086}
-  - component: {fileID: 1084544627}
   - component: {fileID: 1084544628}
   m_Layer: 3
   m_Name: Slider_Floor_8
@@ -2160,7 +1965,6 @@ GameObject:
   - component: {fileID: 2119668797806544110}
   - component: {fileID: 8292788830586210882}
   - component: {fileID: 9193851121837984000}
-  - component: {fileID: 1844820062}
   - component: {fileID: 1844820063}
   m_Layer: 3
   m_Name: Slider_Floor_6
@@ -2182,7 +1986,6 @@ GameObject:
   - component: {fileID: 2119668798410931811}
   - component: {fileID: 8292788830916128975}
   - component: {fileID: 9193851122300023693}
-  - component: {fileID: 262250285}
   - component: {fileID: 262250286}
   m_Layer: 3
   m_Name: Slider_Floor_7
@@ -2204,7 +2007,6 @@ GameObject:
   - component: {fileID: 2119668798328599934}
   - component: {fileID: 8292788831167249362}
   - component: {fileID: 9193851122351945872}
-  - component: {fileID: 687443558}
   - component: {fileID: 687443559}
   m_Layer: 3
   m_Name: Slider_Floor_3
@@ -2290,27 +2092,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   distance: 9
---- !u!65 &5409938059083293943
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8723071352515214470}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5409938059083293944
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2752,7 +2533,6 @@ GameObject:
   - component: {fileID: 6231123207054337913}
   - component: {fileID: 4036933363460516309}
   - component: {fileID: 3784405644802353815}
-  - component: {fileID: 5409938059083293943}
   - component: {fileID: 5409938059083293944}
   m_Layer: 3
   m_Name: Slider_Floor_1
