@@ -20,11 +20,18 @@ public class GoogleAdsManager : MonoBehaviour
 
     private void Start()
     {
+        
+
         // Mobil reklamları başlatma
         MobileAds.Initialize(initStatus => 
         {
             print("Reklam Başlatıldı.");
         });
+        
+         // Reklam cihazı ayarlarını yapma
+        RequestConfiguration requestConfiguration = new RequestConfiguration();
+        requestConfiguration.TestDeviceIds.Add("6ee96d1b15e3d4fccad468606de360e8");
+        MobileAds.SetRequestConfiguration(requestConfiguration);
 
         
         // Banner reklamını yükle
@@ -37,10 +44,7 @@ public class GoogleAdsManager : MonoBehaviour
 
     void Update()
     {
-        // Reklam cihazı ayarlarını yapma
-        RequestConfiguration requestConfiguration = new RequestConfiguration();
-        requestConfiguration.TestDeviceIds.Add("6ee96d1b15e3d4fccad468606de360e8");
-        MobileAds.SetRequestConfiguration(requestConfiguration);
+       
     }
 
     #region Banner
