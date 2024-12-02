@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
-   
 
     bool dustumu = false; // topun yere dusup dusmedigini kontrol eden bool
     private float _maxDistance=0.1f;
@@ -16,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float speedright = 2f;
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private int rayLenght;
+    
 
     
 
@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
    
     public void MoveBall()
     {  
+        /*
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began && IsGrounded()) 
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
@@ -52,11 +53,15 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        */
+
+        
         if (Input.GetMouseButtonDown(0) && IsGrounded())
         {
 
             _rb.AddForce(transform.up * speedup + transform.right * speedright, ForceMode.Impulse);
         }
+        
 
 
 

@@ -1710,14 +1710,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2161680195047932433}
-  - component: {fileID: 6989831555295244449}
   - component: {fileID: 2119668799765472172}
   - component: {fileID: 8292788831747960064}
   - component: {fileID: 9193851120969592386}
   - component: {fileID: 1313594279153895087}
+  - component: {fileID: 9193851120969592387}
+  - component: {fileID: 9193851120969592388}
   m_Layer: 3
   m_Name: Slider_Floor_10
-  m_TagString: Floor
+  m_TagString: floorfinish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1752,11 +1753,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2161680195316604641}
-  - component: {fileID: 6989831555563908177}
   - component: {fileID: 2119668799496814428}
   - component: {fileID: 8292788832016429552}
   - component: {fileID: 9193851121238258354}
   - component: {fileID: 1313594279422564959}
+  - component: {fileID: 9193851121238258355}
   m_Layer: 3
   m_Name: Slider_Floor_4
   m_TagString: Floor
@@ -1773,11 +1774,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2161680195097863760}
-  - component: {fileID: 6989831555345159392}
   - component: {fileID: 2119668799411423213}
   - component: {fileID: 8292788832201574721}
   - component: {fileID: 9193851121286924803}
   - component: {fileID: 1313594279606510318}
+  - component: {fileID: 9193851121286924804}
   m_Layer: 3
   m_Name: Slider_Floor_2
   m_TagString: Floor
@@ -1815,11 +1816,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2161680195602719693}
-  - component: {fileID: 6989831556986671485}
   - component: {fileID: 2119668797765714544}
   - component: {fileID: 8292788830622715100}
   - component: {fileID: 9193851121788637086}
   - component: {fileID: 1313594281180915571}
+  - component: {fileID: 9193851121788637087}
   m_Layer: 3
   m_Name: Slider_Floor_8
   m_TagString: Floor
@@ -1836,11 +1837,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2161680195622708563}
-  - component: {fileID: 6989831556968912867}
   - component: {fileID: 2119668797806544110}
   - component: {fileID: 8292788830586210882}
   - component: {fileID: 9193851121837984000}
   - component: {fileID: 1313594281205096941}
+  - component: {fileID: 9193851121837984001}
   m_Layer: 3
   m_Name: Slider_Floor_6
   m_TagString: Floor
@@ -2017,48 +2018,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   distance: 9
---- !u!114 &6989831555295244449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153722892843091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a54ab23c9201044820f64535f387c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  distance: 9
---- !u!114 &6989831555345159392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723377654802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a54ab23c9201044820f64535f387c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  distance: 9
---- !u!114 &6989831555563908177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723161109667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a54ab23c9201044820f64535f387c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  distance: 9
 --- !u!114 &6989831556476266099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2080,34 +2039,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3611153724260984220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a54ab23c9201044820f64535f387c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  distance: 9
---- !u!114 &6989831556968912867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723920326417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a54ab23c9201044820f64535f387c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  distance: 9
---- !u!114 &6989831556986671485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611153723883690383}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00a54ab23c9201044820f64535f387c3, type: 3}
@@ -2570,6 +2501,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9193851120969592387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611153722892843091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794ea82bd9943714a8506b91e693af24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  distance: 9
+--- !u!114 &9193851120969592388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611153722892843091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48823a4f568a25746ae16bd34ef53e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &9193851121238258354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2591,6 +2548,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9193851121238258355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611153723161109667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794ea82bd9943714a8506b91e693af24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  distance: 9
 --- !u!65 &9193851121286924803
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2612,6 +2583,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9193851121286924804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611153723377654802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794ea82bd9943714a8506b91e693af24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  distance: 9
 --- !u!65 &9193851121769399466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2654,6 +2639,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9193851121788637087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611153723883690383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794ea82bd9943714a8506b91e693af24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  distance: 9
 --- !u!65 &9193851121837984000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2675,6 +2674,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9193851121837984001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611153723920326417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794ea82bd9943714a8506b91e693af24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  distance: 9
 --- !u!65 &9193851122300023693
 BoxCollider:
   m_ObjectHideFlags: 0
