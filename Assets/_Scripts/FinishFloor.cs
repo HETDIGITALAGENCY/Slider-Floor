@@ -17,7 +17,7 @@ public class FinishFloor : MonoBehaviour
     private void OnCollisionEnter(Collision col)
     { 
         if (col.gameObject.CompareTag("Player"))
-        { 
+        {
             googleads.LoadInterstitialAd();
             googleads.ShowInterstitialAd();
         } 
