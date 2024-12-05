@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float speedright = 2f;
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private int rayLenght;
+    [SerializeField] private AudioSource jumpEffect;
     
 
     
@@ -57,8 +58,8 @@ public class PlayerController : MonoBehaviour
 
         
         if (Input.GetMouseButtonDown(0) && IsGrounded())
-        {
-
+        {    
+              jumpEffect.Play();
             _rb.AddForce(transform.up * speedup + transform.right * speedright, ForceMode.Impulse);
         }
         
@@ -77,7 +78,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         if(Physics.BoxCast(_groundCheck.position, _boxSize , -transform.up, transform.rotation,_maxDistance,_groundLayer))
         {

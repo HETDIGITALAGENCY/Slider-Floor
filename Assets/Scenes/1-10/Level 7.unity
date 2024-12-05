@@ -545,6 +545,12 @@ Transform:
   - {fileID: 2161680195047932433}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &509842366 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 630644861350521978, guid: 447aa106020f25944948cff908cc8971,
+    type: 3}
+  m_PrefabInstance: {fileID: 555848823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &555848823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1148,6 +1154,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   rayLenght: 0
+  jumpEffect: {fileID: 509842366}
 --- !u!1 &1354342164
 GameObject:
   m_ObjectHideFlags: 0

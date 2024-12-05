@@ -193,6 +193,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85e09de21caf4714da0bbf1779d3dbdb, type: 3}
+--- !u!82 &223703238 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 630644861350521978, guid: 447aa106020f25944948cff908cc8971,
+    type: 3}
+  m_PrefabInstance: {fileID: 843045208}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &262250286
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1298,6 +1304,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   rayLenght: 0
+  jumpEffect: {fileID: 223703238}
 --- !u!1 &1354342164
 GameObject:
   m_ObjectHideFlags: 0

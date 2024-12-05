@@ -1134,6 +1134,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   rayLenght: 0
+  jumpEffect: {fileID: 1635072130}
 --- !u!1 &1354342164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,6 +1206,12 @@ Transform:
 --- !u!1 &1474872058 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5791408348898765195, guid: 447aa106020f25944948cff908cc8971,
+    type: 3}
+  m_PrefabInstance: {fileID: 182157804553664757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1635072130 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 630644861350521978, guid: 447aa106020f25944948cff908cc8971,
     type: 3}
   m_PrefabInstance: {fileID: 182157804553664757}
   m_PrefabAsset: {fileID: 0}
@@ -1550,7 +1557,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1929670699}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1293528044078735429, guid: 447aa106020f25944948cff908cc8971, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
