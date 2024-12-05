@@ -9,6 +9,7 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private GameObject _menuPanel;
     [SerializeField] private Button _playButton;
     [SerializeField] private Button _quitButton;
+    [SerializeField] private Button _levelsButton;
 
     private void Start()
     {
@@ -28,7 +29,7 @@ public class UI_Manager : MonoBehaviour
     {
         Application.Quit();
     }
-    
-    
-    
+
+
+
 }
