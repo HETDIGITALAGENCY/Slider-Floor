@@ -1234,6 +1234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d2c59b40e786340828927096a98918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelButtons: []
+  lockImages: []
 --- !u!4 &1082377886
 Transform:
   m_ObjectHideFlags: 0

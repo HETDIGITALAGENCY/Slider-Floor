@@ -60,7 +60,6 @@ public class _Floor : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            gameObject.tag = "Newfloor";
             tagchanger = true;
             speed = 0f;
         }

@@ -812,6 +812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48823a4f568a25746ae16bd34ef53e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,6 +1216,18 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 182157804553664757}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1726399570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7056993751516502859, guid: 447aa106020f25944948cff908cc8971,
+    type: 3}
+  m_PrefabInstance: {fileID: 182157804553664757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1844820056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1552,18 +1565,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1929670699}
+    - target: {fileID: 7056993751516502859, guid: 447aa106020f25944948cff908cc8971,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1929670699}
     - target: {fileID: 8268493754504851526, guid: 447aa106020f25944948cff908cc8971,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1929670699}
-    - target: {fileID: 8982681233839607727, guid: 447aa106020f25944948cff908cc8971,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1155
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1293528044078735429, guid: 447aa106020f25944948cff908cc8971, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1790,6 +1802,7 @@ GameObject:
   - component: {fileID: 8292788831747960064}
   - component: {fileID: 9193851120969592386}
   - component: {fileID: 762012892}
+  - component: {fileID: 9193851120969592387}
   m_Layer: 3
   m_Name: Slider_Floor_10
   m_TagString: floorfinish
@@ -2136,6 +2149,11 @@ PrefabInstance:
       propertyPath: _text
       value: 
       objectReference: {fileID: 225932371}
+    - target: {fileID: 3625299572432635114, guid: 7b401eed1e20ba44487923fd61056a08,
+        type: 3}
+      propertyPath: _menuButton
+      value: 
+      objectReference: {fileID: 1726399570}
     - target: {fileID: 3625299572432635114, guid: 7b401eed1e20ba44487923fd61056a08,
         type: 3}
       propertyPath: _pausePanel
@@ -2670,6 +2688,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9193851120969592387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611153722892843091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d2c59b40e786340828927096a98918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelButtons: []
 --- !u!65 &9193851121238258354
 BoxCollider:
   m_ObjectHideFlags: 0

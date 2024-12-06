@@ -13,8 +13,8 @@ public class Level_Management : MonoBehaviour
 
     [SerializeField] private GameObject _pausePanel;
     [SerializeField] private Button _resumeButton;
+    [SerializeField] private Button _menuButton;
     [SerializeField] private TMP_Text _text;
-    [SerializeField] private Button _mainMenuButton;
     [SerializeField] private Button _pauseButton;
 
     public void Start()
@@ -48,6 +48,11 @@ public class Level_Management : MonoBehaviour
         _pausePanel.SetActive(false);
         _continuePanel.SetActive(false);
         Time.timeScale = 1.0f;
+    }
+ 
+    public void MenuButton()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
     
     

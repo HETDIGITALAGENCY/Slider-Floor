@@ -1,24 +1,28 @@
 using UnityEngine;
 using GoogleMobileAds.Api;
+using UnityEngine.SceneManagement;
 
 public class FinishFloor : MonoBehaviour
 {
     GoogleAdsManager googleads;
-    
+    public int currentLevel;
+    Levels levels;
+
+
 
     private void Start()
     {
-        googleads = FindObjectOfType<GoogleAdsManager>(); 
-
-
-            
+        currentLevel = int.Parse(SceneManager.GetActiveScene().name.Split(' ')[1]);
+        googleads = FindObjectOfType<GoogleAdsManager>();
+        levels = FindObjectOfType<Levels>();
     }  
     
     private void OnCollisionEnter(Collision col)
     { 
         if (col.gameObject.CompareTag("Player"))
         {
-            googleads.LoadInterstitialAd();
+            levels.UnlockNextLevel(currentLevel);
+           // googleads.LoadInterstitialAd();
             googleads.ShowInterstitialAd();
         } 
 
