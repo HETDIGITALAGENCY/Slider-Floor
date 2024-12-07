@@ -28,7 +28,11 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
+        if (Time.timeScale == 0 )
+        {
+            return;
+        }
         // Top yere düştü mü?
         if (transform.position.y <= 0.13f)
         {
@@ -39,13 +43,17 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // UI elementlerine tıklanıp tıklanmadığını kontrol et
+
+       // Ekrana tıklanırsa
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Mouse tıklaması yapıldı!"); // Test için
-            // Eğer UI üzerinde tıklama yapılmazsa zıplamayı çalıştır
-            MoveBall();
+            // Eğer UI elemanına tıklanmıyorsa zıplama yap
+            
+                MoveBall();
+            
         }
+
+        // UI elementlerine tıklanıp tıklanmadığını kontrol et
 
         // Eğer oyun duruyorsa (timeScale == 0) zıplama işlemi engellensin
         if (Time.timeScale == 0 || !canJump)
@@ -53,6 +61,8 @@ public class PlayerController : MonoBehaviour
             return;
         }
     }
+  
+    
 
     public void MoveBall()
     {
@@ -99,4 +109,5 @@ public class PlayerController : MonoBehaviour
         canJump = true;
         Debug.Log("Zıplama aktif edildi.");
     }
+   
 }

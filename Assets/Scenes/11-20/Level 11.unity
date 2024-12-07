@@ -1317,10 +1317,6 @@ MonoBehaviour:
   _levelSc: {fileID: 995823817}
   speedup: 5
   speedright: 2
-  _layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  rayLenght: 0
   jumpEffect: {fileID: 1740261183}
 --- !u!1 &1354342164
 GameObject:
@@ -2615,6 +2611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButtons: []
+  lockImages: []
 --- !u!65 &9193851121238258354
 BoxCollider:
   m_ObjectHideFlags: 0
