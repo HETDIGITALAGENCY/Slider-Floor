@@ -9,7 +9,6 @@ public class Level_Management : MonoBehaviour
     PlayerController playerController;
     public GameObject _continuePanel;
     public Button _continueButton;
- 
 
     [SerializeField] private GameObject _pausePanel;
     [SerializeField] private Button _resumeButton;
@@ -24,34 +23,41 @@ public class Level_Management : MonoBehaviour
         _continuePanel.SetActive(false);
         _pausePanel.SetActive(false);
 
-
-        //_pauseButton.gameObject.SetActive(true); 
+        playerController = FindObjectOfType<PlayerController>();
 
         _continueButton.onClick.AddListener(ContinueButton);
         _resumeButton.onClick.AddListener(ResumeButton);
         _pauseButton.onClick.AddListener(PauseButton);
         _text.text = SceneManager.GetActiveScene().name;
     }
+
     public void ContinueButton()
-    { 
+    {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        
     }
+
     public void PauseButton()
-    {   
+    {
         Time.timeScale = 0.0f;
         _pausePanel.SetActive(true);
+
+        // Zıplamayı devre dışı bırak
+        playerController.DisableJump();
     }
+
     public void ResumeButton()
     {
         _pausePanel.SetActive(false);
         _continuePanel.SetActive(false);
         Time.timeScale = 1.0f;
+
+        // Zıplamayı yeniden aktif et
+        playerController.EnableJump();
     }
- 
+
     public void MenuButton()
     {
         SceneManager.LoadScene("MainMenu");
-    }      
+    }
 }

@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+
 public class PlayerController : MonoBehaviour
 {
-
-    bool dustumu = false; // topun yere dusup dusmedigini kontrol eden bool
-    private float _maxDistance=0.1f;
+    bool dustumu = false; // topun yere düşüp düşmediğini kontrol eden bool
+    private bool canJump = true; // Zıplama kontrolü
+    private float _maxDistance = 0.1f;
 
     [SerializeField] public Rigidbody _rb;
     [SerializeField] private Transform _groundCheck;
@@ -13,17 +15,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Level_Management _levelSc;
     [SerializeField] public float speedup = 5f;
     [SerializeField] public float speedright = 2f;
-    [SerializeField] private LayerMask _layerMask;
-    [SerializeField] private int rayLenght;
     [SerializeField] private AudioSource jumpEffect;
-    
 
-    
-
-   void Awake()
+    void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-        
     }
 
     void Start()
@@ -31,19 +27,9 @@ public class PlayerController : MonoBehaviour
         Application.targetFrameRate = 300;
     }
 
-   
     void Update()
     {
-        MoveBall();
-    }
-   
-    public void MoveBall()
-    {      
-        if (Input.GetMouseButtonDown(0) && IsGrounded())
-        {    
-              jumpEffect.Play();
-            _rb.AddForce(transform.up * speedup + transform.right * speedright, ForceMode.Impulse);
-        }
+        // Top yere düştü mü?
         if (transform.position.y <= 0.13f)
         {
             dustumu = true;
@@ -53,21 +39,45 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // UI elementlerine tıklanıp tıklanmadığını kontrol et
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Mouse tıklaması yapıldı!"); // Test için
+            // Eğer UI üzerinde tıklama yapılmazsa zıplamayı çalıştır
+            MoveBall();
+        }
+
+        // Eğer oyun duruyorsa (timeScale == 0) zıplama işlemi engellensin
+        if (Time.timeScale == 0 || !canJump)
+        {
+            return;
+        }
     }
+
+    public void MoveBall()
+    {
+        Debug.Log("MoveBall fonksiyonu çağrıldı!"); // Test için
+        if (IsGrounded())
+        {
+            jumpEffect.Play();
+            _rb.AddForce(transform.up * speedup + transform.right * speedright, ForceMode.Impulse);
+        }
+    }
+
     public bool IsGrounded()
     {
-        if(Physics.BoxCast(_groundCheck.position, _boxSize , -transform.up, transform.rotation,_maxDistance,_groundLayer))
+        if (Physics.BoxCast(_groundCheck.position, _boxSize, -transform.up, transform.rotation, _maxDistance, _groundLayer))
         {
             return true;
         }
         else
         {
-            return false; 
+            return false;
         }
     }
+
     private void OnCollisionEnter(Collision col)
     {
-      
         if (col.gameObject.CompareTag("floorfinish"))
         {
             _levelSc._continuePanel.SetActive(true);
@@ -75,10 +85,18 @@ public class PlayerController : MonoBehaviour
             speedright = 0f;
         }
     }
-    
 
- 
+    // Zıplamayı devre dışı bırak
+    public void DisableJump()
+    {
+        canJump = false;
+        Debug.Log("Zıplama devre dışı bırakıldı.");
+    }
 
-
-
+    // Zıplamayı aktif et
+    public void EnableJump()
+    {
+        canJump = true;
+        Debug.Log("Zıplama aktif edildi.");
+    }
 }
