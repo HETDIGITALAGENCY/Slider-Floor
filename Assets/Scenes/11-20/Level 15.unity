@@ -193,6 +193,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!1 &327473583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6589466604692048839, guid: 447aa106020f25944948cff908cc8971,
+    type: 3}
+  m_PrefabInstance: {fileID: 843045208}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1059,11 @@ PrefabInstance:
       objectReference: {fileID: 843045210}
     - target: {fileID: 3625299572432635114, guid: 7b401eed1e20ba44487923fd61056a08,
         type: 3}
+      propertyPath: MenuPanel
+      value: 
+      objectReference: {fileID: 327473583}
+    - target: {fileID: 3625299572432635114, guid: 7b401eed1e20ba44487923fd61056a08,
+        type: 3}
       propertyPath: _pausePanel
       value: 
       objectReference: {fileID: 843045211}
@@ -1305,10 +1316,6 @@ MonoBehaviour:
   _levelSc: {fileID: 995823817}
   speedup: 5
   speedright: 2
-  _layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  rayLenght: 0
   jumpEffect: {fileID: 1308061628}
 --- !u!82 &1308061628 stripped
 AudioSource:
@@ -2645,6 +2652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButtons: []
+  lockImages: []
 --- !u!65 &9193851121238258354
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class Levels : MonoBehaviour
 {
     public Button[] levelButtons; // Levels sahnesindeki butonlarý buraya ekleyin.
     public GameObject[] lockImages; // Butonlarýn kilit görsellerini buraya ekleyin.
+    public Button backButton;
 
     void Start()
     {
@@ -68,5 +69,10 @@ public class Levels : MonoBehaviour
         string nextLevelKey = "Level" + (currentLevel + 1);
         PlayerPrefs.SetInt(nextLevelKey, 1); // Bir sonraki levelin kilidini aç
         PlayerPrefs.Save(); // Deðiþiklikleri kaydet
+    } 
+
+    public void BackButton()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -1131,10 +1131,6 @@ MonoBehaviour:
   _levelSc: {fileID: 1929670699}
   speedup: 5
   speedright: 2
-  _layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  rayLenght: 0
   jumpEffect: {fileID: 1635072130}
 --- !u!1 &1354342164
 GameObject:
@@ -1402,6 +1398,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1935813572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6589466604692048839, guid: 447aa106020f25944948cff908cc8971,
+    type: 3}
+  m_PrefabInstance: {fileID: 182157804553664757}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2031850574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,11 +1577,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1929670699}
-    - target: {fileID: 8756053198433645028, guid: 447aa106020f25944948cff908cc8971,
-        type: 3}
-      propertyPath: m_TagString
-      value: pause
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2154,6 +2151,11 @@ PrefabInstance:
       propertyPath: _text
       value: 
       objectReference: {fileID: 225932371}
+    - target: {fileID: 3625299572432635114, guid: 7b401eed1e20ba44487923fd61056a08,
+        type: 3}
+      propertyPath: MenuPanel
+      value: 
+      objectReference: {fileID: 1935813572}
     - target: {fileID: 3625299572432635114, guid: 7b401eed1e20ba44487923fd61056a08,
         type: 3}
       propertyPath: _menuButton

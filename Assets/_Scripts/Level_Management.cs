@@ -14,7 +14,9 @@ public class Level_Management : MonoBehaviour
     [SerializeField] private Button _resumeButton;
     [SerializeField] private Button _menuButton;
     [SerializeField] private TMP_Text _text;
-    [SerializeField] private Button _pauseButton;
+    [SerializeField] private Button _pauseButton; 
+     public GameObject MenuPanel; 
+
 
     public void Start()
     {
@@ -32,28 +34,27 @@ public class Level_Management : MonoBehaviour
     }
 
     public void ContinueButton()
-    {
+    {   
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void PauseButton()
-    {
+    {   
+        MenuPanel.SetActive(true);
         Time.timeScale = 0.0f;
         _pausePanel.SetActive(true);
 
-        // Zıplamayı devre dışı bırak
-        playerController.DisableJump();
+
+        
     }
 
     public void ResumeButton()
-    {
+    {  
+        MenuPanel.SetActive(false);
         _pausePanel.SetActive(false);
         _continuePanel.SetActive(false);
         Time.timeScale = 1.0f;
-
-        // Zıplamayı yeniden aktif et
-        playerController.EnableJump();
     }
 
     public void MenuButton()

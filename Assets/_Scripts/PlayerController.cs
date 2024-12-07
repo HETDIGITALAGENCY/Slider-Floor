@@ -1,11 +1,9 @@
-using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     bool dustumu = false; // topun yere düşüp düşmediğini kontrol eden bool
-    private bool canJump = true; // Zıplama kontrolü
     private float _maxDistance = 0.1f;
 
     [SerializeField] public Rigidbody _rb;
@@ -28,10 +26,15 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
-    {   
-        if (Time.timeScale == 0 )
+    {
+        if (Extensions.IsPointerOverUIObject()==true)
         {
-            return;
+            Debug.Log("1");
+            return; 
+        }
+        if (Input.GetMouseButtonDown(0)) // Eğer pause değilse
+        {
+            MoveBall();
         }
         // Top yere düştü mü?
         if (transform.position.y <= 0.13f)
@@ -43,26 +46,9 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
-       // Ekrana tıklanırsa
-        if (Input.GetMouseButtonDown(0))
-        {
-            // Eğer UI elemanına tıklanmıyorsa zıplama yap
-            
-                MoveBall();
-            
-        }
-
-        // UI elementlerine tıklanıp tıklanmadığını kontrol et
-
-        // Eğer oyun duruyorsa (timeScale == 0) zıplama işlemi engellensin
-        if (Time.timeScale == 0 || !canJump)
-        {
-            return;
-        }
     }
-  
-    
+
+
 
     public void MoveBall()
     {
@@ -90,24 +76,10 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("floorfinish"))
         {
+            _levelSc.MenuPanel.SetActive(true);
             _levelSc._continuePanel.SetActive(true);
             speedup = 0f;
             speedright = 0f;
         }
     }
-
-    // Zıplamayı devre dışı bırak
-    public void DisableJump()
-    {
-        canJump = false;
-        Debug.Log("Zıplama devre dışı bırakıldı.");
-    }
-
-    // Zıplamayı aktif et
-    public void EnableJump()
-    {
-        canJump = true;
-        Debug.Log("Zıplama aktif edildi.");
-    }
-   
 }
