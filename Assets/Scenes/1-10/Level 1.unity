@@ -1575,6 +1575,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1929670699}
+    - target: {fileID: 8756053198433645028, guid: 447aa106020f25944948cff908cc8971,
+        type: 3}
+      propertyPath: m_TagString
+      value: pause
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2701,6 +2706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButtons: []
+  lockImages: []
 --- !u!65 &9193851121238258354
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -53,7 +53,5 @@ public class Level_Management : MonoBehaviour
     public void MenuButton()
     {
         SceneManager.LoadScene("MainMenu");
-    }
-    
-    
+    }      
 }

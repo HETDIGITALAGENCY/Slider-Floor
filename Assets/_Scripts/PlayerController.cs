@@ -38,36 +38,12 @@ public class PlayerController : MonoBehaviour
     }
    
     public void MoveBall()
-    {  
-        /*
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began && IsGrounded()) 
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray,out hit))
-            {
-                if(hit.collider != null)
-                {
-                   _rb.AddForce(transform.up * speedup + transform.right * speedright, ForceMode.Impulse);
-                   hit.collider.GetComponent<Collider>();
-                }
-            }
-        }
-        */
-
-        
+    {      
         if (Input.GetMouseButtonDown(0) && IsGrounded())
         {    
               jumpEffect.Play();
             _rb.AddForce(transform.up * speedup + transform.right * speedright, ForceMode.Impulse);
         }
-        
-
-
-
-
-
         if (transform.position.y <= 0.13f)
         {
             dustumu = true;
